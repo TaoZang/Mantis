@@ -436,6 +436,7 @@ extension CropViewController {
             stackView?.addArrangedSubview(cropToolbar)
             stackView?.addArrangedSubview(cropStackView)
         }
+        view.layoutIfNeeded()
     }
             
     private func updateLayout() {

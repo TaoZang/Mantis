@@ -422,7 +422,6 @@ extension CropViewController {
         guard config.showAttachedCropToolbar else {
             stackView?.removeArrangedSubview(cropStackView)
             stackView?.addArrangedSubview(cropStackView)
-            view.layoutIfNeeded()
             return
         }
         
@@ -436,6 +435,7 @@ extension CropViewController {
             stackView?.addArrangedSubview(cropToolbar)
             stackView?.addArrangedSubview(cropStackView)
         }
+        view.layoutIfNeeded()
     }
             
     private func updateLayout() {
